@@ -1,8 +1,6 @@
-"""Simple plotting utilities using matplotlib. The viewer functions accept a DataFrame or stock name (which will be fetched)."
-"""
 import matplotlib.pyplot as plt
 import pandas as pd
-from .core import getAllData
+from .functions import getAllData
 
 def plotStock(stock_or_df, columns=['Close']):
     if isinstance(stock_or_df, pd.DataFrame):

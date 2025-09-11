@@ -1,6 +1,5 @@
-"""Comparison utilities for multiple stocks."""
 import pandas as pd
-from .core import getAllData
+from .functions import getAllData
 
 def compareStocks(stocks, metric='Close'):
     frames = {}
